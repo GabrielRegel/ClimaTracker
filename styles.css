@@ -1,0 +1,117 @@
+/* Estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #121212; /* Fundo escuro */
+    color: #f0f0f0; /* Texto claro */
+    display: flex;
+    justify-content: space-evenly; /* Distribui o conteúdo entre o clima e o mapa */
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: linear-gradient(135deg, #1e1e1e, #333333); /* Gradiente suave */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5); /* Sombra para profundidade */
+    width: 350px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ffffff; /* Título branco */
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 70%;
+    padding: 12px;
+    border-radius: 8px 0 0 8px; /* Apenas os cantos esquerdo arredondados */
+    border: 1px solid #555;
+    background-color: #333;
+    color: #fff;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4CAF50; /* Borda verde quando focado */
+    background-color: #444;
+}
+
+button {
+    padding: 12px 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 0 8px 8px 0; /* Apenas os cantos direito arredondados */
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #45a049; /* Cor de hover mais escura */
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(1px); /* Efeito de clique */
+}
+
+#weather-info {
+    margin-top: 30px;
+    opacity: 0;
+    visibility: hidden; /* Impede o display do conteúdo */
+    transition: opacity 0.5s ease-in-out, visibility 0s 0.5s; /* Animação suave */
+}
+
+#weather-info.visible {
+    opacity: 1;
+    visibility: visible; /* Faz o conteúdo aparecer */
+    transition: opacity 0.5s ease-in-out;
+}
+
+#city-name {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #f1f1f1;
+    margin-bottom: 10px;
+}
+
+#temp, #description, #humidity, #wind {
+    font-size: 1.2em;
+    margin: 5px 0;
+    color: #b0b0b0;
+}
+
+#error {
+    color: #f44336; /* Vermelho para erro */
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
