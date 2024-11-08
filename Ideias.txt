@@ -1,7 +1,0 @@
-Para não ficar muito simles, colocar um gif do clima de acordo com o clima escolhido
-exemplo
-se o clima for chuva, coloque um gif de chuva
-modelo de gif para seguir
-https://i.pinimg.com/originals/d8/34/5c/d8345cf4cdd7e013e964f91d0c3b2228.gif
-
-mostrar horário no lugar
