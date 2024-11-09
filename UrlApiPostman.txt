@@ -1,0 +1,1 @@
+https://api.weatherapi.com/v1/current.json?key=f2e1ef3748a14f71bcc00545240711&q=$Campo Mourao&lang=pt
