@@ -28,7 +28,7 @@ Para executar o ClimaTracker localmente, siga as etapas abaixo:
 
 1. **Clone este repositório**:
     ```bash
-    git clone https://github.com/GabrielRegel/ClimaTracker.git
+    git clone https://github.com/usuario/ClimaTracker.git
     ```
 2. **Navegue até o diretório**:
     ```bash
