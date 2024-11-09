@@ -4,7 +4,7 @@ ClimaTracker é um projeto desenvolvido como parte do trabalho final do 3º trim
 
 ## Objetivo do Projeto
 
-O projeto visa aplicar e consolidar conhecimentos em desenvolvimento web, incluindo o uso de APIs para consumo de dados externos, técnicas de responsividade e estilização avançada para uma interface de usuário intuitiva e atraente. Escolhemos o tema de rastreamento climático por ser relevante e uma ótima oportunidade para explorar APIs públicas, além de oferecer uma aplicação prática e acessível aos usuários. Usamos tecnicas de SEO para a divulgação para ser encontrada facilmente atravéz de palavras chaves.
+O projeto visa aplicar e consolidar conhecimentos em desenvolvimento web, incluindo o uso de APIs para consumo de dados externos, técnicas de responsividade e estilização avançada para uma interface de usuário intuitiva e atraente. Escolhemos o tema de rastreamento climático por ser relevante e uma ótima oportunidade para explorar APIs públicas, além de oferecer uma aplicação prática e acessível aos usuários.
 
 ## Funcionalidades
 
@@ -28,7 +28,7 @@ Para executar o ClimaTracker localmente, siga as etapas abaixo:
 
 1. **Clone este repositório**:
     ```bash
-    git clone https:https://github.com/GabrielRegel/ClimaTracker.git
+    git clone https://github.com/usuario/ClimaTracker.git
     ```
 2. **Navegue até o diretório**:
     ```bash

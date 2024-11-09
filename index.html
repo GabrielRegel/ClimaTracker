@@ -1,25 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ClimaTracker - Previsão do Tempo em Tempo Real</title>
-
-    <meta name="description" content="Obtenha a previsão do tempo em tempo real para qualquer cidade com o ClimaTracker. Confira temperatura, umidade, vento e muito mais.">
-    <meta name="keywords" content="previsão do tempo, clima, temperatura, meteorologia, ClimaTracker">
-    <meta name="robots" content="index, follow">
-
-    <meta property="og:title" content="ClimaTracker - Previsão do Tempo em Tempo Real">
-    <meta property="og:description" content="Confira a previsão do tempo atualizada para sua cidade com o ClimaTracker.">
-    <meta property="og:image" content="Imagens/LogoSite.webp">
-    <meta property="og:url" content="https://seusite.com">
-    <meta property="og:type" content="website">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="ClimaTracker - Previsão do Tempo">
-    <meta name="twitter:description" content="Veja a previsão do tempo em tempo real para sua cidade.">
-    <meta name="twitter:image" content="Imagens/LogoSite.webp">
-
+    <title>ClimaTracker</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
     <link rel="icon" href="Imagens/LogoSite.webp" type="image/x-icon">
@@ -27,61 +11,34 @@
 <body>
     <div class="main-container">
         <div class="container">
-            <div><img id="gif" src="https://i.pinimg.com/originals/73/94/32/739432d532bf90abdadbeea579abc21b.gif" alt="teste"></div>
             <h1>ClimaTracker</h1>
-            <h2>Previsão do Tempo em Tempo Real</h2>
-
             <div class="input-container">
-                <input type="text" id="city" placeholder="Digite a cidade" aria-label="Digite o nome da cidade para obter a previsão do tempo">
+                <input type="text" id="city" placeholder="Digite a cidade" />
                 <button onclick="getWeather()">Buscar</button>
             </div>
 
             <div id="weather-info" class="hidden">
-                <h3 id="city-name"></h3>
-                <p id="temp"></p>
-                <p id="description"></p>
-                <p id="humidity"></p>
-                <p id="wind"></p>
-                <p id="datetime"></p>
+                <div id="city-name"></div>
+                <div id="temp"></div>
+                <div id="description"></div>
+                <div id="humidity"></div>
+                <div id="wind"></div>
+                <div id="datetime"></div>
             </div>
 
             <div id="error" class="hidden">Cidade não encontrada!</div>
         </div>
-
         <div id="localInf" class="location-info hidden">
-            <img id="weather-icon" alt="Ícone do clima atual">
+            <img id="weather-icon" alt="Ícone do clima">
             <span id="local-temp"></span>
             <span id="local-city"></span>
         </div>
-
         <div class="map-container">
+
+
             <div id="map"></div>
         </div>
     </div>
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WeatherForecast",
-        "name": "ClimaTracker",
-        "description": "Previsão do tempo em tempo real para qualquer cidade. Confira temperatura, umidade e condições climáticas.",
-        "location": {
-            "@type": "Place",
-            "name": "Cidade do Usuário",
-            "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": "0",
-                "longitude": "0"
-            }
-        },
-        "temperature": {
-            "@type": "QuantitativeValue",
-            "value": "25",
-            "unitText": "Celsius"
-        },
-        "url": "https://seusite.com"
-    }
-    </script>
 
     <script src="script.js"></script>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
