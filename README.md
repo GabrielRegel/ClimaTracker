@@ -11,7 +11,7 @@ O projeto visa aplicar e consolidar conhecimentos em desenvolvimento web, inclui
 - **Busca por Cidade**: Permite ao usuário digitar o nome de qualquer cidade e visualizar informações detalhadas sobre o clima atual.
 - **Localização Padrão**: Inicia com a localização de Campo Mourão, exibindo o clima atual e as informações meteorológicas dessa cidade.
 - **Mapas Interativos**: Mapa embutido que ajusta a visualização para a cidade buscada, utilizando a biblioteca Leaflet.
-- **Responsividade**: Layout adaptável para dispositivos móveis e desktop.
+- **Responsividade Completa**: Layout totalmente adaptável para dispositivos móveis e desktop, garantindo uma experiência de uso consistente em diferentes telas.
 - **Temática de Clima Neutro**: Interface com cores suaves, inspirada em tons de céu nublado.
 
 ## Tecnologias Utilizadas
